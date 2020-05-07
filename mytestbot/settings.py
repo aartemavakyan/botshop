@@ -25,7 +25,7 @@ SECRET_KEY = '6%2=2*w_^ox7yn0_mbsnuwqg#(g0652z2pdlk0eiti)_u^j26g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['81d500b4.ngrok.io']
 
 
 # Application definition
@@ -120,4 +120,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+DOMAIN = 'https://81d500b4.ngrok.io/'
 TOKEN = '963126763:AAHWdm7rNpMmncFFzRD2f-dMlGogv97wFlk'
