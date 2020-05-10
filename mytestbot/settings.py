@@ -25,7 +25,7 @@ SECRET_KEY = '6%2=2*w_^ox7yn0_mbsnuwqg#(g0652z2pdlk0eiti)_u^j26g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['81d500b4.ngrok.io']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'mybot',
+    'mybot.apps.MybotConfig',
 ]
 
 MIDDLEWARE = [
@@ -119,6 +119,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-DOMAIN = 'https://81d500b4.ngrok.io/'
-TOKEN = '963126763:AAHWdm7rNpMmncFFzRD2f-dMlGogv97wFlk'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+DOMAIN = 'https://77ddc692.ngrok.io/'
+TOKEN = '1208678431:AAGyN4Cd9xxxC5na9ERjKbQbYE7fibp7UhI'
